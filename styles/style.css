@@ -8,6 +8,12 @@ html {
 h1 {
     font-size: 60px;
     text-align: center;
+    padding: 10px;
+    background-color: #0800a5;
+    width: 400px;
+    margin: 40px auto;
+    color: rgb(255, 255, 255);
+    text-shadow: 10px 5px 2.5px rgb(0, 0, 0);
 }
 
 p,
