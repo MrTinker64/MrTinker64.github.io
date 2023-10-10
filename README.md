@@ -1,2 +1,2 @@
-# ambk.com
-My personal website
+# My personal website
+An experiment in learning how to do web development
