@@ -5,6 +5,22 @@ html {
     color:azure;
 }
 
+p,
+li {
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+    margin: 1rem 2rem;
+}
+
+a {
+    color: #1262C3;
+}
+
+a:hover {
+    color: rgb(0, 195, 185);
+}
+
 .main-heading {
     font-size: 4rem;
     text-align: center;
@@ -25,6 +41,15 @@ html {
 h1 + p {
     margin: 2rem 4rem;
     text-align: center;
+}
+
+.image-with-text {
+    display: inline-flex;
+    border: 0.1rem solid white;
+}
+
+.image-with-text section {
+    align-self: center;
 }
 
 .image-with-text h2 {
@@ -49,31 +74,6 @@ h1 + p {
     align-self: center;
 }
 
-.image-with-text section {
-    align-self: center;
-}
-
-.image-with-text {
-    display: inline-flex;
-    border: 0.1rem solid white;
-}
-
-p,
-li {
-    font-size: 1rem;
-    line-height: 2rem;
-    letter-spacing: 0.1rem;
-    margin: 1rem 2rem;
-}
-
-a {
-    color: #1262C3;
-}
-
-a:hover {
-    color: rgb(0, 195, 185);
-}
-
-.banner {
-    width: 100%;
+.image-with-text+.image-with-text {
+    margin-top: 2rem;
 }
