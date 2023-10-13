@@ -27,6 +27,37 @@ h1 + p {
     text-align: center;
 }
 
+.image-with-text h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem 1rem;
+    margin: 0 0;
+    display: inherit;
+}
+
+.image-with-text p {
+    text-align: center;
+    padding: 0 3rem;
+    margin: 1.5rem 0;
+    display: inherit;
+}
+
+.image-with-text img {
+    display: inherit;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.image-with-text section {
+    align-self: center;
+}
+
+.image-with-text {
+    display: inline-flex;
+    border: 0.1rem solid white;
+}
+
 p,
 li {
     font-size: 1rem;
