@@ -21,6 +21,11 @@ a:hover {
     color: rgb(0, 195, 185);
 }
 
+main {
+    max-width: 1000px;
+    margin: auto;
+}
+
 .main-heading {
     font-size: 4rem;
     text-align: center;
@@ -38,7 +43,7 @@ a:hover {
     text-shadow: 10px 5px 2.5px rgb(0, 0, 0);
 }
 
-h1 + p {
+#first-p {
     margin: 2rem 4rem;
     text-align: center;
 }
