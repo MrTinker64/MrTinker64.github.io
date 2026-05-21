@@ -59,6 +59,8 @@
             border: 1px solid #333;
             border-radius: 8px;
             min-height: 400px;
+            max-height: 80vh;
+            overflow-y: auto;
         }
 
         #output {
@@ -126,7 +128,7 @@
 
         function appendOutput(text) {
             outputEl.textContent += text;
-            terminalEl.scrollTop = terminalEl.scrollHeight;
+            inputEl.scrollIntoView({ behavior: 'smooth' });
         }
 
         let pyodide = null;
@@ -220,7 +222,7 @@ def process_command(line):
                     inputLine.classList.add('hidden');
                 }
 
-                terminalEl.scrollTop = terminalEl.scrollHeight;
+                inputEl.scrollIntoView({ behavior: 'smooth' });
             }
         });
 
