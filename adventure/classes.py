@@ -31,7 +31,12 @@ class Player:
         self.night_time = False
 
     def look(self):
-        print('You are currently in the ' + self.place.name, end=". ")
+        in_word = "in"
+        if self.place.name == "Lake":
+            in_word = "at"
+        if self.place.name == "Path":
+            in_word = "on"
+        print(f'You are currently {in_word} the ' + self.place.name, end=". ")
         if self.place.name == 'Closet':
             if not any(item.name == 'Flashlight' for item in self.backpack):
                 print("The room is too dark to see in, the only light coming from the door to the Studio you just walked through.")
@@ -66,6 +71,8 @@ class Player:
             if destination.locked:
                 print(destination.name + ' is locked! You need to unlock it first.')
             else:
+                if self.place.name == "Zendo" and destination.name == "Studio":
+                    print("You walk through a secret door...\n")
                 self.place = destination
                 self.look()
 
@@ -76,6 +83,8 @@ class Player:
         if type(thing) != str:
             print('Thing should be a string.')
             return
+        if thing == "Rc":
+            thing = "RC"
         if thing in self.place.things:
             item = self.place.take(thing)
             self.backpack.append(item)
