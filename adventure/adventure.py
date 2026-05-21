@@ -53,7 +53,7 @@ def adv_eval(exp):
     if COMMAND_NUM_ARGS[operator] == 0:
         function()
     else:
-        function(operand) # type: ignore
+        function(operand.title()) # type: ignore
 
 def help():
     print('There are {} possible commands:'.format(len(COMMAND_FORMATS)))
