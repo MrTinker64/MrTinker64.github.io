@@ -99,6 +99,18 @@
         #input-line.hidden {
             display: none;
         }
+
+        @media (max-width: 600px) {
+            #terminal {
+                margin: 0.5rem;
+                padding: 0.75rem 1rem;
+                max-height: 70vh;
+            }
+
+            #output, #input-line input, #input-line {
+                font-size: 0.85rem;
+            }
+        }
     </style>
 </head>
 
