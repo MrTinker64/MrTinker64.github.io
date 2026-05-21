@@ -124,7 +124,7 @@ Welcome to The Architect's Riddle
 
 ------------------------------------------------------------------------------------------------------------------------
 
-:
+You were left with the following:
 
 
 Dear Heir,
