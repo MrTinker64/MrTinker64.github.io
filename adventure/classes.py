@@ -47,7 +47,7 @@ class Player:
         if self.place.name == 'Observatory':
             print()
             if self.night_time:
-                print("Now that it is the early morning you are able to look through the telescope at the celestial objects listed on the wall.\nEventually you see an odd pattern emerging in the objects you're looking at.\nFirst you see lots of double star clusters and binary stars which all look like an 8.\nFurther down the list there was a variety thin or cigar-shaped galaxies reminding you of a 1.")
+                print("Now that it is the early morning you are able to look through the telescope at the celestial objects listed on the wall.\nEventually you see an odd pattern emerging in the objects you're looking at.\nFirst there are a variety of thin or cigar-shaped galaxies reminding you of a 1.\nFurther down the list you see lots of double star clusters and binary stars which all look like an 8.")
             else:
                 print("Unfortunately you can't use the telescope right now because it is daytime.")
         if self.place.name == 'Lake' and any(item.name == 'RC' for item in self.backpack):
@@ -122,7 +122,7 @@ class Player:
         if len(code) != 4:
             print("Code must be 4 digits")
             return
-        if code == '8127':
+        if code == '1827':
             self.wonMoney = True
             print(WIN_MESSAGE_MONEY)
             if not self.wonEstate:
