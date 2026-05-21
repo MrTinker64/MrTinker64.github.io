@@ -153,11 +153,12 @@
 
         async function main() {
             // Load Pyodide and fetch Python files in parallel
+            const cacheBust = '?v=' + Date.now();
             const [pyodideInstance, classesCode, dataCode, adventureCode] = await Promise.all([
                 loadPyodide(),
-                fetch('adventure/classes.py').then(r => r.text()),
-                fetch('adventure/data.py').then(r => r.text()),
-                fetch('adventure/adventure.py').then(r => r.text()),
+                fetch('adventure/classes.py' + cacheBust).then(r => r.text()),
+                fetch('adventure/data.py' + cacheBust).then(r => r.text()),
+                fetch('adventure/adventure.py' + cacheBust).then(r => r.text()),
             ]);
             pyodide = pyodideInstance;
 
