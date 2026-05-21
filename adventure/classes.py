@@ -34,7 +34,7 @@ class Player:
         print('You are currently in the ' + self.place.name, end=". ")
         if self.place.name == 'Closet':
             if not any(item.name == 'Flashlight' for item in self.backpack):
-                print("The room is too dark to see in and the only light has broken.")
+                print("The room is too dark to see in, the only light coming from the door to the Studio you just walked through.")
                 return
             else:
                 print("The room is too dark to see in and the only light bulb has broken.\n\nLuckily, you picked up the flashlight from earlier.\nYou turn on your flashlight and it illuminates:\n")
