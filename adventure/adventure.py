@@ -25,7 +25,7 @@ def adv_parse(line):
     elif command == 'unlock':
         return ('unlock', ' '.join(tokens))
     elif command == 'keycode':
-        if any(item.name == 'Lockbox' for item in me.backpack) or me.place == dining_room: 
+        if me.place == dining_room: # any(item.name == 'Lockbox' for item in me.backpack) or 
             return ('keycode', ' '.join(tokens))
         else:
             raise SyntaxError("Must be in the room with the lockbox to enter the code")
