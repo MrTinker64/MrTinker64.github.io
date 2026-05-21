@@ -126,9 +126,14 @@
         const terminalEl = document.getElementById('terminal');
         const loadingEl = document.getElementById('loading');
 
+        function scrollToBottom() {
+            terminalEl.scrollTop = terminalEl.scrollHeight;
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        }
+
         function appendOutput(text) {
             outputEl.textContent += text;
-            inputEl.scrollIntoView({ behavior: 'smooth' });
+            scrollToBottom();
         }
 
         let pyodide = null;
@@ -222,7 +227,7 @@ def process_command(line):
                     inputLine.classList.add('hidden');
                 }
 
-                inputEl.scrollIntoView({ behavior: 'smooth' });
+                scrollToBottom();
             }
         });
 
