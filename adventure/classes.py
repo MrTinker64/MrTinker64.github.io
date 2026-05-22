@@ -101,6 +101,7 @@ class Player:
         else:
             for item in self.backpack:
                 print(item.name, '-', item.description)
+            print("\nNot all items need to be used. Some will automatically change the room description and others are just for fun :)")
 
 
     def unlock(self, place):

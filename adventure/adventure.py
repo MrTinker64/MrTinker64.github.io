@@ -130,7 +130,8 @@ You were left with the following:
 Dear Heir,
 
 You will only be receiving this message after I have died.
-You are the heir to my expansive estate, but before you can claim it you must unlock the box sitting in front of you.
+You are the heir to my expansive estate and my fortune of $100 million.
+However, before you can claim these you must unlock the two boxes sitting in front of you.
 You might wonder why I have locked your inheritance behind a puzzle.
 As an architect and buddhist I have always held the following two beliefs:
  - the world can be seen from many perspectives
@@ -142,7 +143,7 @@ Good luck,
 Mrs. G
 Renowned architect for the following projects: the Rising Fire house, the Entire Slate building, and the CisAmerica Pyramid
 
-P.S. I will leave you with one hint. An architect\'s best friend is a piece of graph paper for precise drawings.
+P.S. I will leave you with one hint. An architect\'s best friend is a piece of paper, specifically graph paper for precise drawings.
 
 """
 
