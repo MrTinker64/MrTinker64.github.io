@@ -71,10 +71,13 @@ class Player:
             if destination.locked:
                 print(destination.name + ' is locked! You need to unlock it first.')
             else:
-                if self.place.name == "Zendo" and destination.name == "Studio":
+                secret_door = self.place.name == "Zendo" and destination.name == "Studio"
+                if secret_door:
                     print("You walk through a secret door...\n")
                 self.place = destination
                 self.look()
+                if secret_door:
+                    print("\n\nDid you notice you just came through a secret door?\n")
 
 
     def take(self, thing):
@@ -147,7 +150,7 @@ class Player:
             
     def meditate(self):
         self.night_time = True
-        print("At first you sit uncomfortably on the cushion, unsure of what to do. As you slow down and focus on your breathing the world starts to\n\nfade away\n\nYou open your eyes and notice it\'s now dark out. Through the window you see stars twinkling up above.")
+        print("At first you sit uncomfortably on the cushion, unsure of what to do.\nAs you slow down and focus on your breathing the world starts to\n\nfade away\n\nYou open your eyes and notice it\'s now dark out. Through the window you see stars twinkling up above.")
 
 
 class Thing:
